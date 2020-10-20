@@ -6,7 +6,7 @@ import Image from "../components/image";
 import PageHeader from "../components/PageHeader";
 import Collapsible from "../components/collapsible";
 import SEO from "../components/seo";
-import FeatureBlock from "../components/featureBlock";
+import FeatureBlock from "../components/FeatureBlock";
 
 const IndexPage = ({ backgroundImage }) => (
   <Layout data-scroll-container>
