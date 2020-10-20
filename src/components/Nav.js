@@ -1,21 +1,22 @@
-import React, { Component } from "react"
-import { Location } from "@reach/router"
-import { Link } from "gatsby"
-import { FiMenu, FiX, FiMessageCircle } from "react-icons/fi"
+import React, { Component } from "react";
+import { Location } from "@reach/router";
+import { Link } from "gatsby";
+import { FiMenu, FiX, FiMessageCircle } from "react-icons/fi";
+import "./Nav.css";
 
 export class Navigation extends Component {
   state = {
     active: false,
     currentPath: false,
-  }
+  };
 
   componentDidMount = () =>
-    this.setState({ currentPath: this.props.location.pathname })
+    this.setState({ currentPath: this.props.location.pathname });
 
-  handleMenuToggle = () => this.setState({ active: !this.state.active })
+  handleMenuToggle = () => this.setState({ active: !this.state.active });
 
   // Only close nav if it is open
-  handleLinkClick = () => this.state.active && this.handleMenuToggle()
+  handleLinkClick = () => this.state.active && this.handleMenuToggle();
 
   render() {
     const { active } = this.state,
@@ -30,7 +31,7 @@ export class Navigation extends Component {
         >
           {children}
         </Link>
-      )
+      );
 
     return (
       <nav className={`Nav ${active ? "Nav-active" : ""}`}>
@@ -54,12 +55,14 @@ export class Navigation extends Component {
             aria-label="Menu Toggle"
             onClick={this.handleMenuToggle}
           >
-            {active ? <FiX size="3rem" /> : <FiMenu size="3rem" className="" />}
+            {active ? <FiX size="1rem" /> : <FiMenu size="1rem" className="" />}
           </button>
         </div>
       </nav>
-    )
+    );
   }
 }
 
-export default () => <Location>{route => <Navigation {...route} />}</Location>
+export default () => (
+  <Location>{(route) => <Navigation {...route} />}</Location>
+);

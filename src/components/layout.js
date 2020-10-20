@@ -5,17 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Scroll from "./locomotiveScroll"
-import Header from "./header"
-import Footer from "./Footer"
-import Nav from "./Nav"
+import Scroll from "./locomotiveScroll";
+import Header from "./header";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
-import "./layout.css"
-import "./locomotive-scroll.css"
+import "./layout.css";
+import "./locomotive-scroll.css";
 
 // This `location` prop will serve as a callback on route change
 const Layout = ({ children, location }) => {
@@ -27,7 +27,7 @@ const Layout = ({ children, location }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -41,20 +41,18 @@ const Layout = ({ children, location }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `120px 1.45rem 1.0875rem 1.45rem`,
+          padding: `120px 0 1.0875rem 0`,
         }}
       >
-        <Nav />
-
         <main>{children}</main>
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -1,0 +1,302 @@
+.Nav {
+  position: absolute;
+  top: 5px;
+  left: 3vw;
+  right: 3vw;
+  z-index: 99;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  width: 94vw;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-family: var(--font-primary);
+}
+
+.Nav--Container {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.Nav--Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.Nav--Links > * + * {
+  margin-left: 1rem;
+}
+
+.Nav .Logo {
+  margin-right: 3rem;
+  position: relative;
+}
+
+.NavLink {
+  padding: 0.5rem 0 0.5rem 3rem;
+  display: block;
+  font-weight: 500;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  border-bottom-color: transparent;
+
+  position: relative;
+  color: transparent;
+  background: linear-gradient(
+      to right,
+      #13f3b9 0%,
+      #5878f3 50%,
+      transparent 50%
+    )
+    100% 0 / 200% 200% #474e51;
+  background-clip: text;
+}
+
+.NavLink:hover,
+.NavLink.active,
+.NavLink:focus {
+  background-position: 0 0;
+  border-bottom-color: transparent;
+}
+
+.NavLink.active {
+  color: var(--danger);
+  border-bottom-color: transparent;
+}
+.borderCenter {
+  position: relative;
+}
+
+.borderCenter::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 60%;
+  height: 2px;
+  opacity: 0;
+  background-color: var(--primary);
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.borderCenter:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.button--locator {
+  display: none;
+}
+
+.ExternalLink {
+  padding: 0.5rem 1rem;
+  display: block;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom-color 0.2s;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  border-bottom-color: transparent;
+}
+
+.ExternalLink:hover,
+.ExternalLink:focus {
+  color: var(--primary);
+  border-bottom-color: transparent;
+}
+
+.ExternalLink.active {
+  color: var(--primary);
+  border-bottom-color: currentColor;
+}
+
+.Nav--Group {
+  position: relative;
+  cursor: pointer;
+}
+
+.Nav--GroupParent {
+  padding-right: 3rem;
+}
+
+.Nav--GroupParent::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.2rem);
+  right: 1rem;
+  border-bottom: 2px solid var(--darkGrey);
+  border-right: 2px solid var(--darkGrey);
+  display: block;
+  height: 0.8rem;
+  width: 0.8rem;
+  transition: 0.3s ease all;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.Nav--GroupLinks {
+  position: absolute;
+  left: 0;
+  width: auto;
+  background: white;
+  border-radius: 5px;
+  /* opacity: 0; */
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.Nav--Group.active .Nav--GroupLinks {
+  max-height: 100vh;
+  opacity: 1;
+  transition: 0.6s ease all;
+}
+
+.Nav--Group.active .Nav--GroupParent::after {
+  top: calc(50% + 0.2rem);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.Nav--GroupLink {
+  display: block;
+  position: relative;
+  width: 15rem;
+  font-size: 80%;
+}
+.ExternalLink--Nav {
+  text-decoration: none;
+  color: var(--darkGrey);
+  line-height: 4rem;
+  padding: 0 0.5rem;
+}
+.ExternalLink--Nav:hover {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.Nav {
+  background: transparent;
+  box-shadow: none;
+}
+.Nav--Container {
+  display: flex;
+}
+
+.Nav--MenuButton {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 1rem;
+  display: block !important;
+  margin-left: auto;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--borderRadius);
+  color: var(--darkGrey);
+  border: none;
+  outline: none;
+  width: 5rem;
+  transition: all 0.3s ease;
+}
+.Nav--MenuButton:active,
+.Nav--MenuButton:hover,
+.Nav--MenuButton:checked {
+  color: #000;
+  border: none;
+  outline: none;
+}
+.Nav .Logo {
+  z-index: 1;
+}
+
+.Nav--Links {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  animation: Nav--Links 0.3s ease;
+}
+
+.Nav--Links > * + * {
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+.Nav-active .Nav--Links {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.Nav-active .NavLink,
+.ExternalLink {
+  animation: Nav--Link 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.Nav .NavLink,
+.ExternalLink {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 300;
+  text-align: left;
+}
+.Nav .NavLink:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.Nav .NavLink:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+.Nav .NavLink:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+.Nav .NavLink:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.Nav .NavLink:nth-of-type(5) {
+  animation-delay: 0.3s;
+}
+.Nav .NavLink:nth-of-type(6) {
+  animation-delay: 0.2s;
+}
+.Nav .NavLink:nth-of-type(7) {
+  animation-delay: 0.1s;
+}
+
+.Nav--GroupLinks {
+  position: relative;
+  text-align: center;
+}
+
+.Nav--GroupLinks .NavLink {
+  font-size: 4rem;
+  line-break: 1;
+  width: auto;
+}
+
+@keyframes Nav--Link {
+  from {
+    transform: translate(0rem, 1rem);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes Nav--Links {
+  from {
+    opacity: 0;
+  }
+}

@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@800&display=swap");
 
 :root {
-  --primary: #f9b916;
-  --secondary: #000;
+  --primary: #e05351;
+  --secondary: #ade22f;
+  --third: #ade22f;
+  --fourth: #28cbda;
+  --fifth: #8b4d4a;
   --lightGrey: whitesmoke;
-  --midGrey: #cacaca;
+  --midGrey: #848d82;
   --darkGrey: #272727;
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Helvetica", serif;
@@ -20,7 +23,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000;
 }
 article,
 aside,
@@ -54,7 +56,7 @@ template {
   display: none;
 }
 a {
-  color: var(--primary);
+  color: var(--third);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -215,7 +217,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(255, 255%, 255%, 0.8);
   font-family: var(--font-primary);
   font-weight: normal;
   word-wrap: break-word;
@@ -448,6 +449,9 @@ fieldset {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+.header {
+  background: var(--primary);
 }
 blockquote {
   margin-left: 1.45rem;
