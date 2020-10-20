@@ -9,4 +9,4 @@ export const scroll = {
     touchMultiplier: 2.5,
     lerp: 0.15,
   },
-}
+};

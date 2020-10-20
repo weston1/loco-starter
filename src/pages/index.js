@@ -4,15 +4,15 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import PageHeader from "../components/PageHeader";
+import FeatureBlock from "../components/FeatureBlock";
 import Collapsible from "../components/collapsible";
 import SEO from "../components/seo";
-import FeatureBlock from "../components/FeatureBlock";
 
 const IndexPage = ({ backgroundImage }) => (
   <Layout data-scroll-container>
     <SEO title="Home" />
     <PageHeader backgroundImage={backgroundImage} data-scroll-section />
-    <FeatureBlock backgroundImage={backgroundImage} data-scroll-section />
+    <FeatureBlock data-scroll-section />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
