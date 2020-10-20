@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "./Image";
-
 import "./FeatureBlock.css";
 
-const FeatureBlock = ({ className = "" }) => {
+const FeatureBlock = () => {
   return (
     <section className="FeatureBlock section">
       <div className="container col-lg-10 col-md-10 mx-auto text-center">

@@ -1,9 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Image from "./image";
 import "./PageHeader.css";
 
-const PageHeader = ({ backgroundImage }) => {
+const PageHeader = () => {
   return (
     <div className="PageHeader relative">
       <div className="BackgroundImage"></div>
