@@ -6,7 +6,6 @@
   z-index: 99;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
   width: 94vw;
-  border-radius: 5px;
   margin: 0 auto;
   font-family: var(--font-primary);
 }
@@ -43,17 +42,8 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
-
   position: relative;
-  color: transparent;
-  background: linear-gradient(
-      to right,
-      #13f3b9 0%,
-      #5878f3 50%,
-      transparent 50%
-    )
-    100% 0 / 200% 200% #474e51;
-  background-clip: text;
+  color: var(--primary);
 }
 
 .NavLink:hover,
@@ -142,8 +132,7 @@
   position: absolute;
   left: 0;
   width: auto;
-  background: white;
-  border-radius: 5px;
+  background: black;
   /* opacity: 0; */
   max-height: 0;
   overflow: hidden;
@@ -190,12 +179,11 @@
 .Nav--MenuButton {
   position: absolute;
   right: 1rem;
-  top: 1rem;
-  padding: 1rem;
+  top: 0.5rem;
+  padding: 0.5rem;
   display: block !important;
   margin-left: auto;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.9);
   border-radius: var(--borderRadius);
   color: var(--darkGrey);
   border: none;
@@ -224,7 +212,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  height: 100vh;
+  width: 100vw;
+  background: black;
   animation: Nav--Links 0.3s ease;
 }
 
@@ -235,9 +225,8 @@
 
 .Nav-active .Nav--Links {
   display: flex;
-  background-color: whitesmoke;
+  background: white;
 }
-
 .Nav-active .NavLink,
 .ExternalLink {
   animation: Nav--Link 0.3s ease-out;

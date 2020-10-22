@@ -453,6 +453,69 @@ fieldset {
 .header {
   background: var(--primary);
 }
+.pixel-text {
+  position: relative;
+}
+.pixel-text:after,
+.pixel-text:before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.pixel-text:after,
+.pixel-text:before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.pixel-text:after {
+  background-image: url("https://thefwa.com/assets/pixel-pattern-overlay.png");
+  background-size: 2px 2px;
+  background-position: 0 0;
+}
+.pixel-text__text {
+  font-family: Good Pro, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  color: #000;
+  font-size: 200px;
+}
+/* Bubble Test */
+.company-1 {
+  background-position: -154px 0;
+}
+
+.company-2 {
+  background-position: -308px 0;
+}
+
+.company-3 {
+  background-position: -462px 0;
+}
+.bubble {
+  background-image: url("../images/spritesheet.png");
+  background-size: 1076px 1076px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: 152px;
+  margin-right: 20px;
+  width: 152px;
+}
 blockquote {
   margin-left: 1.45rem;
   margin-right: 1.45rem;

@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import Scroll from "./locomotiveScroll";
 import Header from "./header";
 import Footer from "./Footer";
-import Nav from "./Nav";
 
 import "./layout.css";
 import "./locomotive-scroll.css";

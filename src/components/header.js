@@ -43,7 +43,6 @@ const Header = ({ siteTitle }) => (
             {siteTitle}
           </Link>
         </h1>
-        <Link to="/">Something</Link>
         <Nav />
       </div>
     </div>

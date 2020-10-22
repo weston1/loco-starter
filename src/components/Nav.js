@@ -40,9 +40,9 @@ export class Navigation extends Component {
             Hi
           </Link>
           <div className="Nav--Links">
-            <a href="/" className="NavLink">
+            <NavLink href="/" className="NavLink">
               Hi
-            </a>
+            </NavLink>
             <div className="row">
               <a href="/contact/" className="NavLink">
                 <FiMessageCircle size="40px" />

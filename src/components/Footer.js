@@ -4,10 +4,11 @@ import "./Footer.css";
 
 const Footer = ({ siteTitle }) => (
   <div className="page-footer">
+    <div>LOGO</div>
     <footer>
-      © {new Date().getFullYear()}, Built with
+      © {new Date().getFullYear()}, Made with
       {` `}
-      <a href="https://www.google.com">some chronic.</a>
+      <a href="https://www.coastal-division.com">some chronic.</a>
     </footer>
   </div>
 );
