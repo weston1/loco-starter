@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Image from "../components/image";
-import PageHeader from "../components/PageHeader";
-import FeatureBlock from "../components/FeatureBlock";
+import Masthead from "../components/Masthead";
+import FeatureBlocks from "../components/FeatureBlocks";
 import BubbleSection from "../components/BubbleSection";
 import Goo from "gooey-react";
 
@@ -14,8 +14,8 @@ import SEO from "../components/seo";
 const IndexPage = () => (
   <Layout data-scroll-container>
     <SEO title="Home" />
-    <PageHeader data-scroll-section></PageHeader>
-    <FeatureBlock data-scroll-section></FeatureBlock>
+    <Masthead data-scroll-section />
+    <FeatureBlocks data-scroll-section />
     <BubbleSection />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />

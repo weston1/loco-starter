@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./FeatureBlock.css";
+import "./FeatureBlocks.css";
 
-const FeatureBlock = () => {
+const FeatureBlocks = () => {
   return (
-    <section className="FeatureBlock section">
+    <section className="FeatureBlocks section">
       <div className="container col-lg-10 col-md-10 mx-auto text-center">
-        <h2 className="FeatureBlock--Title">Pinata Types</h2>
+        <h2 className="FeatureBlocks--Title">Pinata Types</h2>
         <div className="container row">
           <div className="col-lg-6 col-md-6 col-10 mx-auto py-3">
             <div className="FeatureArray--Sticker--Container">
@@ -60,4 +60,4 @@ const FeatureBlock = () => {
   );
 };
 
-export default FeatureBlock;
+export default FeatureBlocks;

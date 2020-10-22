@@ -17,6 +17,7 @@
     "gooey-react": "^1.0.1",
     "gsap": "^3.3.0",
     "hamburger-react": "^2.2.0",
+    "keen-slider": "^5.2.4",
     "locomotive-scroll": "^3.5.4",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
