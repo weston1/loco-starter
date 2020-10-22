@@ -6,10 +6,14 @@ import Image from "../components/image";
 import Masthead from "../components/Masthead";
 import FeatureBlocks from "../components/FeatureBlocks";
 import BubbleSection from "../components/BubbleSection";
+import Menu from "../components/Menu";
+import Gradient from "../components/Gradient";
+
 import Goo from "gooey-react";
 
 import Collapsible from "../components/collapsible";
 import SEO from "../components/seo";
+import Granim from "../components/Gradient";
 
 const IndexPage = () => (
   <Layout data-scroll-container>
@@ -20,6 +24,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <Menu />
     <Goo
       intensity="strong"
       style={{ height: "12rem", position: "relative", width: "12rem" }}
@@ -47,6 +52,7 @@ const IndexPage = () => (
         }}
       />
     </Goo>
+    <Granim />
     <div class="pixel-text ">
       <span class="pixel-text__text">100</span>
     </div>

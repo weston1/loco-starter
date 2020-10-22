@@ -17,7 +17,7 @@ const FeatureBlocks = () => {
           <div
             className="col-lg-6 col-md-6 col-10 mx-auto py-3"
             data-scroll
-            data-scroll-speed="10"
+            data-scroll-speed="6"
           >
             <div className="FeatureArray--Sticker--Container">
               <img
