@@ -55,13 +55,11 @@ export default class Granim extends Component {
 
   get style() {
     return {
-      position: "relative",
+      position: "absolute",
       display: "block",
       width: "100%",
       height: "auto",
-      top: 0,
       right: 0,
-      bottom: 0,
       left: 0,
     };
   }
