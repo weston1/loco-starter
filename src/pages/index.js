@@ -5,10 +5,6 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import Masthead from "../components/Masthead";
 import FeatureBlocks from "../components/FeatureBlocks";
-import BubbleSection from "../components/BubbleSection";
-import Menu from "../components/Menu";
-import Gradient from "../components/Gradient";
-
 import Goo from "gooey-react";
 
 import Collapsible from "../components/collapsible";
@@ -20,11 +16,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Masthead data-scroll-section />
     <FeatureBlocks data-scroll-section />
-    <BubbleSection />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Menu />
     <Goo
       intensity="strong"
       style={{ height: "12rem", position: "relative", width: "12rem" }}
@@ -53,10 +47,8 @@ const IndexPage = () => (
       />
     </Goo>
     <Granim />
-    <div class="pixel-text ">
-      <span class="pixel-text__text">100</span>
-    </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
+    <Link to="/apollo/">Go to page 2</Link> <br />
     <Collapsible>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
       veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
